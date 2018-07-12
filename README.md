@@ -211,7 +211,6 @@ CP方处理例子：
 //拼接示例
 post内容
 array(9) {
- {
 	["platform"] => string(1)
 	"1" ["orderStatus"] => string(1)
 	"1" ["gameId"] => string(1)
@@ -222,7 +221,6 @@ array(9) {
 	"2017061918305979" ["orderId"] => string(27)
 	"201706191831001661830628101" ["sign"] => string(32)
 	"413982a71628d73c5eb9b613ee13495b"
-	}
 }
 
 key：060c26955b6a8e04ea58253dcda931ed
