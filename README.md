@@ -61,14 +61,13 @@
 请求例子：   
 ```php
 
-key：060c26955b6a8e04ea58253dcda931ed<br>
-拼接示例：<br>
+key：060c26955b6a8e04ea58253dcda931ed
+拼接示例：
 "cpOrderId=2017061918305979gameId=1orderId=2017061918310016618306281
 01orderStatus=1platform=1subGameId=1totalFe
-e=100userId=192060c26955b6a8e04ea58253dcda931ed"<br>
+e=100userId=192060c26955b6a8e04ea58253dcda931ed"
 
-sign：<br>
- "0554a2df922c7ae7b3a111d8c8f6ebfc"<br>
+sign："0554a2df922c7ae7b3a111d8c8f6ebfc"
  
  
 Public function notify(){
@@ -231,15 +230,14 @@ array(9) {
   ["sign"]=>
   string(32) "413982a71628d73c5eb9b613ee13495b"
 }
-<br>
-key：060c26955b6a8e04ea58253dcda931ed<br>
-拼接示例：<br>
+
+key：060c26955b6a8e04ea58253dcda931ed
+拼接示例：
 "cpOrderId=2017061918305979gameId=1orderId=2017061918310016618306281
 01orderStatus=1platform=1subGameId=1totalFe
-e=100userId=192060c26955b6a8e04ea58253dcda931ed"<br>
+e=100userId=192060c26955b6a8e04ea58253dcda931ed"
 
-sign：<br>
- "0554a2df922c7ae7b3a111d8c8f6ebfc"<br>
+sign："0554a2df922c7ae7b3a111d8c8f6ebfc"
 
 ```php
 Public function notify(){
