@@ -63,9 +63,14 @@
 
 key：060c26955b6a8e04ea58253dcda931ed
 拼接示例：
-"cpOrderId=2017061918305979gameId=1orderId=2017061918310016618306281
-01orderStatus=1platform=1subGameId=1totalFe
-e=100userId=192060c26955b6a8e04ea58253dcda931ed"
+"cpOrderId=2017061918305979
+ gameId=1
+ orderId=201706191831001661830628101
+ orderStatus=1
+ platform=1
+ subGameId=1
+ totalFee=100
+ userId=192060c26955b6a8e04ea58253dcda931ed"
 
 sign："0554a2df922c7ae7b3a111d8c8f6ebfc"
  
@@ -210,24 +215,28 @@ Public function notify(){
 CP方处理例子：
 //拼接示例
 post内容
-array(9) {
-	["platform"] => string(1)
-	"1" ["orderStatus"] => string(1)
-	"1" ["gameId"] => string(1)
-	"1" ["subGameId"] => string(1)
-	"1" ["totalFee"] => string(3)
-	"100" ["userId"] => string(3)
-	"192" ["cpOrderId"] => string(16)
-	"2017061918305979" ["orderId"] => string(27)
-	"201706191831001661830628101" ["sign"] => string(32)
-	"413982a71628d73c5eb9b613ee13495b"
-}
+array(9) - >
+  ["platform"] => string(1)
+  "1" ["orderStatus"] => string(1)
+  "1" ["gameId"] => string(1)
+  "1" ["subGameId"] => string(1)
+  "1" ["totalFee"] => string(3)
+  "100" ["userId"] => string(3)
+  "192" ["cpOrderId"] => string(16)
+  "2017061918305979" ["orderId"] => string(27)
+  "201706191831001661830628101" ["sign"] => string(32)
+  "413982a71628d73c5eb9b613ee13495b"
 
 key：060c26955b6a8e04ea58253dcda931ed
 拼接示例：
-"cpOrderId=2017061918305979gameId=1orderId=2017061918310016618306281
-01orderStatus=1platform=1subGameId=1totalFe
-e=100userId=192060c26955b6a8e04ea58253dcda931ed"
+  "cpOrderId=2017061918305979
+   gameId=1
+   orderId=201706191831001661830628101
+   orderStatus=1
+   platform=1
+   subGameId=1
+   totalFee=100
+   userId=192060c26955b6a8e04ea58253dcda931ed"
 
 sign："0554a2df922c7ae7b3a111d8c8f6ebfc"
 
