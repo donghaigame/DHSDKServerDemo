@@ -3,18 +3,21 @@
 
 ##	接口说明
 ###	1、用户会话验证
-* 1) **请求地址：** https://api.sdk.dhios.cn/open/verifyAccessToken
-* 2) **调用方式：** HTTPS Post
-* 3) **接口描述：**
-验证 accessToken 是否为有效的登录用户会话，若有效则返回其 userId。**“游戏客户端”**通过“SDK 客户端”获取到accessToken，传到**“游戏服务器”**，**“游戏服务器”**到**“SDK 服务器”**验证用户会话accessToken的有效性，获取用户的userId，供游戏使用。</br>**注意：进行接口调用前请确认accessToken是否具备值，如accessToken值为空时请勿调用此接口。**
-* 4) **请求方：** 游戏服务器
-* 5) **响应方：** SDK 服务器
-* 6) **请求内容：** application/x-www-urlencoded格式
-* 7）**错误码：   0      正常 
+<ol>
+<li>**请求地址：** https://api.sdk.dhios.cn/open/verifyAccessToken
+<li>**调用方式：** HTTPS Post
+<li>**接口描述：**	
+<li>验证 accessToken 是否为有效的登录用户会话，若有效则返回其 userId。**“游戏客户端”**通过“SDK 客户端”获取到accessToken，传到**“游戏服务器”**，**“游戏服务器”**到**“SDK 服务器”**验证用户会话accessToken的有效性，获取用户的userId，供游戏使用。</br>**注意：进行接口调用前请确认accessToken是否具备值，如accessToken值为空时请勿调用此接口。**
+<li>**请求方：** 游戏服务器
+<li>**响应方：** SDK 服务器
+<li>**请求内容：** application/x-www-urlencoded格式
+<li>**错误码：   0      正常 
 		3001   签名错误 
 		3002   token失效
 		5000   服务端内部数据错误
-* 8）**KEY：运营提供的apiKey
+<li>**KEY：运营提供的apiKey
+<li>	
+</ol>
 
 <table>
     <thead>
