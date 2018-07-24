@@ -55,7 +55,7 @@
             <td>签名参数</td>
             <td>string</td>
             <td>是</td>
-            <td>所有参数key(不包括sign)按照A-Z字段升序（去除&符号，key与value用=连接）直接拼接apikey之后,md5运算</td>
+            <td>所有参数key(不包括sign)按照A-Z字段升序（去除&符号，key与value用=连接）直接拼接apikey的值之后,md5运算</td>
         </tr>
     </tbody>
 </table>
@@ -63,12 +63,17 @@
 请求例子：   
 ```php
 
-apikey：ABCD(东海提供)
-拼接示例：
+
+对参数名按字母升序得到字符串
+已排序（值根据文档要求类型填写，示例仅参考）
+
 1. gameId = 1
 2. subGameId = 2
 3. accessToken = abcdefD
-对参数名按字母升序得到字符串
+
+apikey：ABCD(东海提供)
+
+拼接示例：
 string=“accessToken=abcdefDgameId=1subGameId=2ABCD"
 sign = MD5(string)
 
@@ -205,7 +210,7 @@ Public function notify(){
         </tr>
         <tr>
             <td>sign</td>
-            <td>所有参数key(不包括sign)按照A-Z字段升序（去除&符号，key与value用=连接）直接拼接apikey之后,md5运算</td>
+            <td>所有参数key(不包括sign)按照A-Z字段升序（去除&符号，key与value用=连接）直接拼接apikey的值之后,md5运算</td>
             <td>string</td>
             <td>是</td>
             <td></td>
@@ -213,29 +218,32 @@ Public function notify(){
     </tbody>
 </table>
 
-CP方处理例子：
-//拼接示例
-post内容
-array(9) - >
-  ["platform"] => string(1)
-  "1" ["orderStatus"] => string(1)
-  "1" ["gameId"] => string(1)
-  "1" ["subGameId"] => string(1)
-  "1" ["totalFee"] => string(3)
-  "100" ["userId"] => string(3)
-  "192" ["cpOrderId"] => string(16)
-  "2017061918305979" ["orderId"] => string(27)
-  "201706191831001661830628101" ["sign"] => string(32)
-  "413982a71628d73c5eb9b613ee13495b"
-
 
 ```php
 
-apikey：060c26955b6a8e04ea58253dcda931ed
 
-拼接示例：对参数名按字母升序得到字符串<同例1>
-"cpOrderId=2017061918305979gameId=1orderId=201706191831001661830628101orderStatus=1platform=1subGameId=1totalFee=100userId=192060c26955b6a8e04ea58253dcda931ed"
+已排序（参数值根据文档要求类型填写，示例仅参考）
 
+1. cpOrderId = 1   
+2. customInfo=2 
+3. endtime = 3
+4. gameId = 4
+5. orderId = 5
+6. orderStatus = 6
+7. platform = 7
+8. randStr = 8
+9. subGameId = 9
+10. totalFee = 10
+11. userId = 11
+
+apikey：ABCD (东海提供)
+
+拼接示例：
+string=“cpOrderId=1customInfo=2endtime=3gameId=4orderId=5orderStatus=6platform=7randStr=8subGameId=9totalFee=10userId=11ABCD”
+
+sign = MD5(string)
+
+结果例如:
 sign："0554a2df922c7ae7b3a111d8c8f6ebfc"
 
 Public function notify(){
