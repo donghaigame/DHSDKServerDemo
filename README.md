@@ -55,15 +55,7 @@
             <td>签名参数</td>
             <td>string</td>
             <td>是</td>
-            <td>api_key = ABCD
-例如：
-1. gameId = 1
-2. subGameId = 2
-3. accessToken = abcdefD
-
-对参数名按字母升序得到字符串
-string=“accessToken=abcdefDgameId=1subGameId=2ABCD"
-sign = MD5(string)</td>
+            <td>所有参数key(不包括sign)按照A-Z字段升序（去除&符号，key与value用=连接）直接拼接apikey之后,md5运算</td>
         </tr>
     </tbody>
 </table>
@@ -71,16 +63,9 @@ sign = MD5(string)</td>
 请求例子：   
 ```php
 
-key：060c26955b6a8e04ea58253dcda931ed
+apikey：060c26955b6a8e04ea58253dcda931ed
 拼接示例：
-"cpOrderId=2017061918305979
- gameId=1
- orderId=201706191831001661830628101
- orderStatus=1
- platform=1
- subGameId=1
- totalFee=100
- userId=192060c26955b6a8e04ea58253dcda931ed"
+"cpOrderId=2017061918305979gameId=1orderId=201706191831001661830628101orderStatus=1platform=1subGameId=1totalFee=100userId=192060c26955b6a8e04ea58253dcda931ed"
 
 sign："0554a2df922c7ae7b3a111d8c8f6ebfc"
  
@@ -214,7 +199,7 @@ Public function notify(){
         </tr>
         <tr>
             <td>sign</td>
-            <td>所有参数key(不包括sign)按照A-Z字段升序（去除&符号，key与value用=连接）直接拼接key之后,md5运算</td>
+            <td>所有参数key(不包括sign)按照A-Z字段升序（去除&符号，key与value用=连接）直接拼接apikey之后,md5运算</td>
             <td>string</td>
             <td>是</td>
             <td></td>
@@ -237,7 +222,7 @@ array(9) - >
   "201706191831001661830628101" ["sign"] => string(32)
   "413982a71628d73c5eb9b613ee13495b"
 
-key：060c26955b6a8e04ea58253dcda931ed
+apikey：060c26955b6a8e04ea58253dcda931ed
 拼接示例：</br>
  "cpOrderId=2017061918305979gameId=1orderId=201706191831001661830628101orderStatus=1platform=1subGameId=1totalFee=100userId=192060c26955b6a8e04ea58253dcda931ed"
 
