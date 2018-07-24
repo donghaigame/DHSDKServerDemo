@@ -65,8 +65,8 @@
 
 apikey：ABCD(东海提供)
 拼接示例：
-1. gameId = a
-2. subGameId = b
+1. gameId = 1
+2. subGameId = 2
 3. accessToken = abcdefD
 对参数名按字母升序得到字符串
 string=“accessToken=abcdefDgameId=1subGameId=2ABCD"
