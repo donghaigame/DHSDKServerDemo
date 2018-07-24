@@ -63,10 +63,16 @@
 请求例子：   
 ```php
 
-apikey：060c26955b6a8e04ea58253dcda931ed
+apikey：ABCD(东海提供)
 拼接示例：
-"cpOrderId=2017061918305979gameId=1orderId=201706191831001661830628101orderStatus=1platform=1subGameId=1totalFee=100userId=192060c26955b6a8e04ea58253dcda931ed"
+1. gameId = a
+2. subGameId = b
+3. accessToken = abcdefD
+对参数名按字母升序得到字符串
+string=“accessToken=abcdefDgameId=1subGameId=2ABCD"
+sign = MD5(string)
 
+结果例如
 sign："0554a2df922c7ae7b3a111d8c8f6ebfc"
  
  
@@ -222,13 +228,15 @@ array(9) - >
   "201706191831001661830628101" ["sign"] => string(32)
   "413982a71628d73c5eb9b613ee13495b"
 
+
+```php
+<同例1>
 apikey：060c26955b6a8e04ea58253dcda931ed
-拼接示例：</br>
+拼接示例：
  "cpOrderId=2017061918305979gameId=1orderId=201706191831001661830628101orderStatus=1platform=1subGameId=1totalFee=100userId=192060c26955b6a8e04ea58253dcda931ed"
 
 sign："0554a2df922c7ae7b3a111d8c8f6ebfc"
 
-```php
 Public function notify(){
     $params = I('post.');
     unset($params['sign']);
