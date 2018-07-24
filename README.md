@@ -55,7 +55,15 @@
             <td>签名参数</td>
             <td>string</td>
             <td>是</td>
-            <td>所有参数(不包括sign)按照A-Z字段升序（去除&符号，key与value用=连接）拼接key之后md5运算</td>
+            <td>api_key = ABCD
+例如：
+1. gameId = 1
+2. subGameId = 2
+3. accessToken = abcdefD
+
+对参数名按字母升序得到字符串
+string=“accessToken=abcdefDgameId=1subGameId=2ABCD"
+sign = MD5(string)</td>
         </tr>
     </tbody>
 </table>
