@@ -239,14 +239,7 @@ array(9) - >
 
 key：060c26955b6a8e04ea58253dcda931ed
 拼接示例：</br>
-  "cpOrderId=2017061918305979
-   gameId=1
-   orderId=201706191831001661830628101
-   orderStatus=1
-   platform=1
-   subGameId=1
-   totalFee=100
-   userId=192060c26955b6a8e04ea58253dcda931ed"
+ "cpOrderId=2017061918305979gameId=1orderId=201706191831001661830628101orderStatus=1platform=1subGameId=1totalFee=100userId=192060c26955b6a8e04ea58253dcda931ed"
 
 sign："0554a2df922c7ae7b3a111d8c8f6ebfc"
 
