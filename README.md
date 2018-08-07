@@ -65,11 +65,12 @@
 
 
 对参数名按字母升序得到字符串
-已排序（值根据文档要求类型填写，示例仅参考）
+已排序（值根据文档要求类型填写，示例仅参考，数据随写）
 
-1. gameId = 1
-2. subGameId = 2
-3. accessToken = abcdefD
+1. accessToken = abcdefD
+2. gameId = 1
+3. subGameId = 2
+
 
 apikey：ABCD(东海提供)
 
