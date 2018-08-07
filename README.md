@@ -63,9 +63,15 @@
 请求例子：   
 ```php
 
+东海数据，临时可测
+ gameId:1
+ subGameId:1
+ apiKey:ba472a72208cb671639d94a54cbb017d
+ payKey:62e393070265e3a094e66027c61c71e6
 
 对参数名按字母升序得到字符串
 已排序（值根据文档要求类型填写，示例仅参考，数据随写）
+
 
 1. accessToken = abcdefD
 2. gameId = 1
@@ -221,6 +227,12 @@ Public function notify(){
 
 
 ```php
+
+东海数据，临时可测
+ gameId:1
+ subGameId:1
+ apiKey:ba472a72208cb671639d94a54cbb017d
+ payKey:62e393070265e3a094e66027c61c71e6
 
 
 已排序（参数值根据文档要求类型填写，示例仅参考）
