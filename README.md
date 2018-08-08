@@ -2,7 +2,7 @@
 
 
 ##	接口说明
-###	1、用户会话验证
+###	1、登陆验证
 
 * 1) **请求地址：** https://api.sdk.dhios.cn/open/verifyAccessToken
 * 2) **调用方式：** HTTPS Post
@@ -124,7 +124,7 @@ Public function notify(){
 使用支付key签名；
 * 4）**请求方：** SDK 服务器  
 * 5）**响应方：** 游戏服务器 
-* 6）**请求内容：** application/x-www-urlencoded格式
+* 6）**请求内容：** form-data 格式
 * 7）**KEY：运营提供的payKey
 * 8）**注意：请验证发起调用的服务器ip地址，ip地址会在参数里给到
 <table>
