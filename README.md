@@ -249,10 +249,10 @@ Public function notify(){
 10. totalFee = 10
 11. userId = 11
 
-apikey：ABCD (东海提供)
+payKey：s231sdaf (东海提供)
 
 拼接示例：
-string=“cpOrderId=1customInfo=2endtime=3gameId=4orderId=5orderStatus=6platform=7randStr=8subGameId=9totalFee=10userId=11ABCD”
+string=“cpOrderId=1customInfo=2endtime=3gameId=4orderId=5orderStatus=6platform=7randStr=8subGameId=9totalFee=10userId=11s231sdaf”
 
 sign = MD5(string)
 
@@ -266,7 +266,7 @@ Public function notify(){
     $sign = $_POST['sign'];
 
     ksort($params);
-    $key = 'key';//由东海颁发使用支付key
+    $key = 'key';//由东海颁发使用payKey
     $sign = md5(urldecode(str_replace("&","",http_build_query($params).$key)));
     if($sign==$_POST['sign']){
     	//商户信息，订单信息验证
