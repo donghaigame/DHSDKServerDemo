@@ -67,7 +67,6 @@
  gameId:1
  subGameId:1
  apiKey:ba472a72208cb671639d94a54cbb017d
- payKey:62e393070265e3a094e66027c61c71e6
 
 对参数名按字母升序得到字符串
 已排序（值根据文档要求类型填写，示例仅参考，数据随写）
@@ -232,7 +231,6 @@ Public function notify(){
 东海数据，临时可测
  gameId:1
  subGameId:1
- apiKey:ba472a72208cb671639d94a54cbb017d
  payKey:62e393070265e3a094e66027c61c71e6
 
 
@@ -284,16 +282,16 @@ Public function notify(){
 }
 
   //可能会出现的错误码
-  CODE_ERROR_SIGN = 3001;//sign签名不正确
-  CODE_ERROR_EXPIRE_TOKEN = 3002;//token过期了
-  CODE_ERROR_CP_ORDER_ID = 3008;//cp order id 错误
+  CODE_ERROR_SIGN        	= 3001;//sign签名不正确
+  CODE_ERROR_EXPIRE_TOKEN 	= 3002;//token过期了
+  CODE_ERROR_CP_ORDER_ID        = 3008;//cp order id 错误
   CODE_ERROR_REPEAT_CP_ORDER_ID = 3009;//重复提交cp订单
-  CODE_ERROR_PAY_ERROR = 3010;//第三方支付失败
-  CODE_ERROR_CREATE_ORDER = 3010;//创建订单失败
-  CODE_ERROR_ORDER_NOT_EXISTS = 3011;//订单不存在
-  CODE_ERROR_ALREADY_PAY = 3012;//已经支付
-  CODE_ERROR_ORDER_FEE = 3013;//支付金额不对
-  CODE_ERROR_DATA = 5000;//数据错误
+  CODE_ERROR_PAY_ERROR 		= 3010;//第三方支付失败
+  CODE_ERROR_CREATE_ORDER 	= 3010;//创建订单失败
+  CODE_ERROR_ORDER_NOT_EXISTS   = 3011;//订单不存在
+  CODE_ERROR_ALREADY_PAY 	= 3012;//已经支付
+  CODE_ERROR_ORDER_FEE          = 3013;//支付金额不对
+  CODE_ERROR_DATA 		= 5000;//数据错误
 
 ```
 
