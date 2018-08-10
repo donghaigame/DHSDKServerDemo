@@ -281,6 +281,19 @@ Public function notify(){
     	echo 'failure';
     }
 }
+
+  //可能会出现的错误码
+  const CODE_ERROR_SIGN = 3001;//sign签名不正确
+  const CODE_ERROR_EXPIRE_TOKEN = 3002;//token过期了
+  const CODE_ERROR_CP_ORDER_ID = 3008;//cp order id 错误
+  const CODE_ERROR_REPEAT_CP_ORDER_ID = 3009;//重复提交cp订单
+  const CODE_ERROR_PAY_ERROR = 3010;//第三方支付失败
+  const CODE_ERROR_CREATE_ORDER = 3010;//创建订单失败
+  const CODE_ERROR_ORDER_NOT_EXISTS = 3011;//订单不存在
+  const CODE_ERROR_ALREADY_PAY = 3012;//已经支付
+  const CODE_ERROR_ORDER_FEE = 3013;//支付金额不对
+  const CODE_ERROR_DATA = 5000;//数据错误
+
 ```
 
 返回内容（string）：
