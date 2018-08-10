@@ -73,8 +73,8 @@
 
 
 1. accessToken = abcdefD
-2. gameId = 1
-3. subGameId = 2
+2. gameId      = 1
+3. subGameId   = 2
 
 
 apikey：ABCD(东海提供)
@@ -229,29 +229,29 @@ Public function notify(){
 ```php
 
 东海数据，临时可测
- gameId:1
- subGameId:1
- payKey:62e393070265e3a094e66027c61c71e6
+ gameId:    1
+ subGameId: 1
+ payKey:    62e393070265e3a094e66027c61c71e6
 
 
 已排序（参数值根据文档要求类型填写，示例仅参考）
 
-1. cpOrderId = 1   
-2. customInfo=2 
-3. endtime = 3
-4. gameId = 4
-5. orderId = 5
+1. cpOrderId   = 1   
+2. customInfo  = 2 
+3. endtime     = 3
+4. gameId      = 4
+5. orderId     = 5
 6. orderStatus = 6
-7. platform = 7
-8. randStr = 8
-9. subGameId = 9
-10. totalFee = 10
-11. userId = 11
+7. platform    = 7
+8. randStr     = 8
+9. subGameId   = 9
+10. totalFee   = 10
+11. userId     = 11
 
 payKey：s231sdaf (东海提供)
 
 拼接示例：
-string=“cpOrderId=1customInfo=2endtime=3gameId=4orderId=5orderStatus=6platform=7randStr=8subGameId=9totalFee=10userId=11s231sdaf”
+string="cpOrderId=1customInfo=2endtime=3gameId=4orderId=5orderStatus=6platform=7randStr=8subGameId=9totalFee=10userId=11s231sdaf"
 
 sign = MD5(string)
 
