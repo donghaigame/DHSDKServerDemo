@@ -217,7 +217,7 @@ Public function notify(){
         </tr>
         <tr>
             <td>sign</td>
-            <td>所有参数key(不包括sign)按照A-Z字段升序（去除&符号，key与value用=连接）直接拼接apikey的值之后,md5运算</td>
+            <td>所有参数key(不包括sign)按照A-Z字段升序（去除&符号，key与value用=连接）直接拼接paykey的值之后,md5运算</td>
             <td>string</td>
             <td>是</td>
             <td></td>
